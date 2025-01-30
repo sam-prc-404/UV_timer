@@ -38,7 +38,7 @@ The schematic and PCB for this project was designed using [Kicad EDA](https://ww
 ### PCB Fabrication
 Fabrication of the PCB for this project was done in-house at [@Robotics Club,Pulchowk Campus](https://robotics.pcampus.edu.np/). 
     
-The fabrication method and guide used can be found [*here*](https://github.com/sam-prc-404/ "PCB Fabrication method")
+The fabrication method and guide used can be found [*here*](https://github.com/sam-prc-404/PCB_Fabrication "PCB Fabrication method")
 
 ![UV TIMER PCB FAB BACK PIC](https://github.com/sam-prc-404/UV_timer "Fabricated PCB Back")
 > PCB BACK PIC
