@@ -1,41 +1,51 @@
 # UV TIMER
+
 Your friendly neighbourhood timer.
 
+----
+
 ### About the project
-This project is a hardware timer based on Arduino.
+----
 
-It uses the Arduino Nano as the controller and WE___  16*2 display and push buttons to interface with the user. 
+This project is a general purpose hardware timer based on Arduino.
 
-The UV is driven by IRFZ44N mosfet and two L7805CV regulators are placed in parallel to help provide current for heavy loads.
+It uses the `Arduino Nano` as the controller, `WE___  16*2 display` and push buttons to interface with the timer. 
+
+The UV is driven by `IRFZ44N mosfet`and two `L7805CV regulators` are placed in parallel to help provide current for heavy loads.
 
 The UV Timer can be powered by a 12V or 5V adapter. 
 
-A jumper is provided that can be used to set the voltage for the load (5V or 12V).
+A jumper (Jx) is provided that can be used to set the voltage for the load (5V or 12V).
 
->*Project PIC HERE*
+![UV TIMER DEMO ](https://github.com/sam-prc-404/UV_timer/Gallery/ "UV TIMER DEMO ")
 
 
 ## HARDWARE
-## PCB
 
 ### Schematic and PCB design
-The schematic and PCB for this project was designed using $"Kicad".
+The schematic and PCB for this project was designed using [Kicad EDA](https://www.kicad.org/).
 
 ->Schematic "/././.sch"
 
+![UV TIMER SCHEMATIC ](https://github.com/sam-prc-404/UV_timer/Gallery/ "UV TIMER SCHEMATIC DIAGRAM")
 >*INSERT SCHEMATIC PIC HERE*
 
 -> PCB "/././.pcb"
+
+![UV TIMER PCB ](https://github.com/sam-prc-404/UV_timer/Gallery/ "UV TIMER PCB DESIGN")
 >*INSERT PCB PIC HERE*
 
 ### PCB Fabrication
-Fabrication of the PCB for this project was done in-house at @Robotics Club,Pulchowk. 
+Fabrication of the PCB for this project was done in-house at [@Robotics Club,Pulchowk Campus](https://robotics.pcampus.edu.np/). 
     
-The fabrication method and guide used can be found *#here#* 
+The fabrication method and guide used can be found [*here*](https://github.com/sam-prc-404/ "PCB Fabrication method")
 
+![UV TIMER PCB FAB BACK PIC](https://github.com/sam-prc-404/UV_timer "Fabricated PCB Back")
+> PCB BACK PIC
+
+![UV TIMER PCB FAB FRONT PIC ](https://github.com/sam-prc-404/UV_timer "Fabricated PCB Front")
 > PDB FRONT PIC
 
-> PCB BACK PIC
 
 ### Bill Of Materials (BOM)
 List of all components/modules used in the project.
@@ -54,23 +64,26 @@ U1	|TSSP58038	|OptoDevice:Vishay_MINICAST-3Pin	|1	|
 
 
 ## SOFTWARE
-The code  for this project  can be found in "/software/UV_timer/UV_timer.ino"
+The code  for this project  can be found in [UV_Timer/Software/UV_timer.ino ](https://github.com/sam-prc-404/UV_timer "UV TIMER CODE")
 
-The timing is handled by arduino's millis().
+The timing is handled by arduino's `millis()`.
 
-If precise timing is required of very short durations the Atmega's internal timers can be used .
+If precise timing of very short durations is required the Atmega's internal timers can be used.
+
 
 
 ## End Note
 
-NOTE:The labels of the buttons and their use are modified in v1 of this project.i.e
 
-    - PAUSE BUTTON (SWx) IS UNUSED 
-    instead ON BUTTON (SWy) is used for start/pause.
+<div style="background-color: #CE2029; padding: 10px; border-radius: 6px;">
+  <strong>⚠️ NOTE ⚠️: </strong>  The labels of the buttons and their functions do not line up in v1 of this project. Please be aware of this issue while using the application.
+</div>
+<br>
 
+> `PAUSE BUTTON` (SWx) IS UNUSED , instead `ON BUTTON` (SWy) is used for start/pause.
 
->.
+***
 
-The hardware, logic, and code are by no means the most efficient and masterfully designed. Thus any modifications and improvements are highly encouraged.
+>The hardware, logic, and code are by no means the most efficient and professionally designed. There still exits many faults and improvements . Thus any modifications and improvements are highly encouraged.
 
-
+***
